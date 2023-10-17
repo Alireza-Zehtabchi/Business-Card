@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Tilt Neon', sans-serif;
+    margin: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    opacity: 0.8;
+    box-shadow: 7px 7px 7px black;
+    border-radius: 3px;
+}
+.profile-pic:hover {
+    opacity: 1;
+}
+
+
+@keyframes colorfulCard {
+    0%   {background-color:  rgb(189, 154, 154);}
+    12.5% {background-color:  rgb(199, 199, 153);}
+    25%  {background-color:  rgb(160, 147, 119);}
+    37.5% {background-color:  rgb(109, 135, 139);}
+    50%  {background-color:  rgb(126, 126, 141);}
+    62.5% {background-color:  rgb(182, 147, 165);}
+    75% {background-color:  rgb(167, 167, 95);}
+    100% {background-color:  rgb(105, 156, 105);}
+}
+
+.card {
+    background-color: #bcd0e2;
+    justify-content: space-evenly;
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    /* border-bottom: 5px solid #bdb2e9; */
+    animation: colorfulCard 20s infinite;
+    box-shadow: 7px 7px 7px black;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #2b2839;
+    
+}
+
+.location {
+    text-decoration: none;
+}
+.location:hover {
+    cursor: pointer;
+}
+
